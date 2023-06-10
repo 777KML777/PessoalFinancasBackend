@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\PessoalFinancasBackend\\Domain\\Domain.csproj": {}
+    "C:\\Projects\\PessoalApi\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\PessoalFinancasBackend\\Domain\\Domain.csproj": {
+    "C:\\Projects\\PessoalApi\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\PessoalFinancasBackend\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Projects\\PessoalApi\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Projects\\PessoalFinancasBackend\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Projects\\PessoalApi\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\KleberM2\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\PessoalFinancasBackend\\Domain\\obj\\",
+        "outputPath": "C:\\Projects\\PessoalApi\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

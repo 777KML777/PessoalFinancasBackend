@@ -6,8 +6,8 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
-<!-- C:\Projects\PessoalFinancasBackend\FinancasBackend\Domain\Domain.csproj
-FinancasBackend\Domain\Domain.csproj -->
+<!-- C:\Projects\PessoalApi\Api\Domain\Domain.csproj
+Api\Domain\Domain.csproj -->
 
   <ItemGroup> 
     <ProjectReference Include="..\Domain\Domain.csproj" />

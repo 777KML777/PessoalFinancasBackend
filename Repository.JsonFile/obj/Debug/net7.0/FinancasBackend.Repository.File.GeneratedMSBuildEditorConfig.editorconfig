@@ -7,5 +7,5 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = FinancasBackend.Repository.JsonFile
-build_property.ProjectDir = c:\Projects\PessoalFinancasBackend\FinancasBackend.Repository.JsonFile\
+build_property.RootNamespace = Api.Repository.JsonFile
+build_property.ProjectDir = c:\Projects\PessoalApi\Api.Repository.JsonFile\

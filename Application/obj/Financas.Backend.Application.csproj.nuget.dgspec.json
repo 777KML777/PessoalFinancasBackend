@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\PessoalFinancasBackend\\Application\\Application.csproj": {}
+    "C:\\Projects\\PessoalApi\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\PessoalFinancasBackend\\Domain\\Domain.csproj": {
+    "C:\\Projects\\PessoalApi\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\PessoalFinancasBackend\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Projects\\PessoalApi\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Projects\\PessoalFinancasBackend\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Projects\\PessoalApi\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\KleberM2\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\PessoalFinancasBackend\\Domain\\obj\\",
+        "outputPath": "C:\\Projects\\PessoalApi\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Projects\\PessoalFinancasBackend\\Application\\Application.csproj": {
+    "C:\\Projects\\PessoalApi\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\PessoalFinancasBackend\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Projects\\PessoalApi\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Projects\\PessoalFinancasBackend\\Application\\Application.csproj",
+        "projectPath": "C:\\Projects\\PessoalApi\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\KleberM2\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\PessoalFinancasBackend\\Application\\obj\\",
+        "outputPath": "C:\\Projects\\PessoalApi\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,11 +93,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Projects\\PessoalFinancasBackend\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projects\\PessoalFinancasBackend\\Domain\\Domain.csproj"
+              "C:\\Projects\\PessoalApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projects\\PessoalApi\\Domain\\Domain.csproj"
               },
-              "C:\\Projects\\PessoalFinancasBackend\\Repository.JsonFile\\Repository.JsonFile.csproj": {
-                "projectPath": "C:\\Projects\\PessoalFinancasBackend\\Repository.JsonFile\\Repository.JsonFile.csproj"
+              "C:\\Projects\\PessoalApi\\Repository.JsonFile\\Repository.JsonFile.csproj": {
+                "projectPath": "C:\\Projects\\PessoalApi\\Repository.JsonFile\\Repository.JsonFile.csproj"
               }
             }
           }
@@ -131,14 +131,14 @@
         }
       }
     },
-    "C:\\Projects\\PessoalFinancasBackend\\Repository.JsonFile\\Repository.JsonFile.csproj": {
+    "C:\\Projects\\PessoalApi\\Repository.JsonFile\\Repository.JsonFile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\PessoalFinancasBackend\\Repository.JsonFile\\Repository.JsonFile.csproj",
+        "projectUniqueName": "C:\\Projects\\PessoalApi\\Repository.JsonFile\\Repository.JsonFile.csproj",
         "projectName": "Repository.JsonFile",
-        "projectPath": "C:\\Projects\\PessoalFinancasBackend\\Repository.JsonFile\\Repository.JsonFile.csproj",
+        "projectPath": "C:\\Projects\\PessoalApi\\Repository.JsonFile\\Repository.JsonFile.csproj",
         "packagesPath": "C:\\Users\\KleberM2\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\PessoalFinancasBackend\\Repository.JsonFile\\obj\\",
+        "outputPath": "C:\\Projects\\PessoalApi\\Repository.JsonFile\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -160,8 +160,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Projects\\PessoalFinancasBackend\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Projects\\PessoalFinancasBackend\\Domain\\Domain.csproj"
+              "C:\\Projects\\PessoalApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projects\\PessoalApi\\Domain\\Domain.csproj"
               }
             }
           }

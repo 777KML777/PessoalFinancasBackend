@@ -1,3 +1,15 @@
+C:\Projects\PessoalApi\Domain\bin\Debug\net7.0\Domain.deps.json
+C:\Projects\PessoalApi\Domain\bin\Debug\net7.0\Domain.dll
+C:\Projects\PessoalApi\Domain\bin\Debug\net7.0\Domain.pdb
+C:\Projects\PessoalApi\Domain\obj\Debug\net7.0\Domain.csproj.AssemblyReference.cache
+C:\Projects\PessoalApi\Domain\obj\Debug\net7.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\PessoalApi\Domain\obj\Debug\net7.0\Domain.AssemblyInfoInputs.cache
+C:\Projects\PessoalApi\Domain\obj\Debug\net7.0\Domain.AssemblyInfo.cs
+C:\Projects\PessoalApi\Domain\obj\Debug\net7.0\Domain.csproj.CoreCompileInputs.cache
+C:\Projects\PessoalApi\Domain\obj\Debug\net7.0\Domain.dll
+C:\Projects\PessoalApi\Domain\obj\Debug\net7.0\refint\Domain.dll
+C:\Projects\PessoalApi\Domain\obj\Debug\net7.0\Domain.pdb
+C:\Projects\PessoalApi\Domain\obj\Debug\net7.0\ref\Domain.dll
 C:\Projects\PessoalFinancasBackend\Domain\bin\Debug\net7.0\Domain.deps.json
 C:\Projects\PessoalFinancasBackend\Domain\bin\Debug\net7.0\Domain.dll
 C:\Projects\PessoalFinancasBackend\Domain\bin\Debug\net7.0\Domain.pdb
