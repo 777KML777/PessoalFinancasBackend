@@ -1,0 +1,6 @@
+Ter um repositório para cada Entidade. ()
+Juntar logo os dados em um serviço sem a dependência do executável ().
+
+Utilizar AutoMapper facilitaria a vida
+Para ser sincero eu não irei fazer mais os projetos com o nome do projeto completo colocando somente o nome 
+ do módulo do projeto. 

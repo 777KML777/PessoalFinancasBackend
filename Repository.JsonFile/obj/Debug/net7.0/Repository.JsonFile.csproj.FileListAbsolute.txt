@@ -1,0 +1,15 @@
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\bin\Debug\net7.0\Repository.JsonFile.deps.json
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\bin\Debug\net7.0\Repository.JsonFile.dll
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\bin\Debug\net7.0\Repository.JsonFile.pdb
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\bin\Debug\net7.0\Domain.dll
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\bin\Debug\net7.0\Domain.pdb
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\obj\Debug\net7.0\Repository.JsonFile.csproj.AssemblyReference.cache
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\obj\Debug\net7.0\Repository.JsonFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\obj\Debug\net7.0\Repository.JsonFile.AssemblyInfoInputs.cache
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\obj\Debug\net7.0\Repository.JsonFile.AssemblyInfo.cs
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\obj\Debug\net7.0\Repository.JsonFile.csproj.CoreCompileInputs.cache
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\obj\Debug\net7.0\Repository.JsonFile.csproj.CopyComplete
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\obj\Debug\net7.0\Repository.JsonFile.dll
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\obj\Debug\net7.0\refint\Repository.JsonFile.dll
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\obj\Debug\net7.0\Repository.JsonFile.pdb
+C:\Projects\PessoalFinancasBackend\Repository.JsonFile\obj\Debug\net7.0\ref\Repository.JsonFile.dll
