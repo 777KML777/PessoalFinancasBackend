@@ -26,6 +26,3 @@ namespace Api.Controllers
 
     }
 }
-
-// Comando para simular o hover do mouse no vs code 
-// Comando para habilitar a navegação nas teclas wsad

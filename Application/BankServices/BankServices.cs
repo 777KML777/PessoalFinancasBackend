@@ -7,11 +7,12 @@ public class BankService : IBankService
 {
     private readonly IBankRepository _bankRepository;
     private readonly IExpensesService _expenseServices;
-    private readonly PaidInstallmentsService _paidInstallmentsServices;
     public BankService()
     {
         _bankRepository = new BankRepository();
+        _expenseServices = new ExpensesService();
     }
+
     // public BankService(IBankRepository bankRepository)
     // {
     //     _bankRepository = bankRepository;
@@ -35,24 +36,24 @@ public class BankService : IBankService
     {
         // Vai primeiro pegar o banco 
         BankEntity bankEntity = _bankRepository.GetById(id);
-        
-        BankDto bank = new BankDto
-        {
-            Id = bankEntity.Id,
-            Balance = bankEntity.Balance,
-            BankName = bankEntity.Name
-        };
-        
+
+        BankDto bank = MappingEntityToDto(bankEntity);
+
+
         // Irá chamar o serviço de expenses somente para passar a lista já com tudo calculado
         List<ExpenseDto> lstExpensesDto = _expenseServices.GetExpenseByIdBank(bank.Id);
-        
         lstExpensesDto.ForEach(x => bank.Expenses.Add(x));
 
-        
+
+        // Passando os dados para os pagamentos. Isso aqui não parece estar muito legal.
+        foreach (var item in bank.Expenses)
+        {
+            item.paidInstallments = new List<PaidInstallmentsDto>();
+            lstExpensesDto.ForEach(x => item.paidInstallments = x.paidInstallments);
+        }
+
         return bank;
     }
-
-
 
     //Para ser sincero Serialização tem que ficar aqui
     public void AddBank(BankDto bank) =>
@@ -60,14 +61,15 @@ public class BankService : IBankService
 
     public BankDto MappingEntityToDto(BankEntity obj)
     {
-        throw new NotImplementedException();
+        return new BankDto
+        {
+            Id = obj.Id,
+            Balance = obj.Balance,
+            BankName = obj.Name
+        };
     }
-
-    public BankEntity MappingDtoToEntity(BankDto obj)
-    {
-        throw new NotImplementedException();
-    }
-
+    public BankEntity MappingDtoToEntity(BankDto obj) =>
+        new BankEntity(obj.BankName, obj.Balance) { Id = obj.Id };
 
     // public void UpdateBank(int id) => 
     //     _bankRepository.Update(MappingDtoToEntity())
