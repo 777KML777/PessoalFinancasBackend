@@ -1,4 +1,5 @@
 using Domain;
+using Repository.JsonFile;
 
 namespace Application;
 
@@ -6,6 +7,11 @@ public class PaidInstallmentsService : IPaidInstallmentsService
 {
 
     private readonly IPaidInstallmentsRepository _paidInstallmentsRepository;
+
+    public PaidInstallmentsService()
+    {
+        _paidInstallmentsRepository = new PaidInstallmentsRepository();
+    }
     public List<PaidInstallmentsDto> GetAllPaidByIdExpenses(int idExpenses)
     {
         List<PaidInstallmentsDto> lstPaidInstallmentss = new List<PaidInstallmentsDto>();
@@ -20,6 +26,11 @@ public class PaidInstallmentsService : IPaidInstallmentsService
 
     public PaidInstallmentsDto MappingEntityToDto(PaidInstallmentsEntity obj)
     {
-        throw new NotImplementedException();
+        return new PaidInstallmentsDto()
+        {
+            Id = obj.Id,
+            IdExpenses = obj.IdExpenses,
+            PaymentDate = obj.PaymentDate
+        };
     }
 }

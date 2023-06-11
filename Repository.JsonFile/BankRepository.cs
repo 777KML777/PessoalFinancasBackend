@@ -24,13 +24,13 @@ namespace Repository.JsonFile
             List<BankEntity> banksJson = ReadAll().ToList();
             banksJson.Add(bank);
 
-            File.WriteAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonBank_{"Json 1"}.json", JsonSerializer.Serialize(banksJson));
+            File.WriteAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonBank.json", JsonSerializer.Serialize(banksJson));
         }
 
         public IList<BankEntity> ReadAll()
         {
 
-            string jsonBanks = File.ReadAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonBank_{"Json 1"}.json");
+            string jsonBanks = File.ReadAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonBank.json");
             var teste = jsonBanks.Replace(@"\", "");
 
 

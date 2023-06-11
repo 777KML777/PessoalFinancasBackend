@@ -16,8 +16,8 @@
             Name = name;
         }
         
-        public decimal Balance { get; private set; }
-        public string Name { get; private set; }
+        public decimal Balance { get; set; }
+        public string Name { get; set; }
         public IReadOnlyCollection<ExpensesEntity> Expenses { get {return _expenses.ToArray(); }}
 
         public void AddExpensesToBanks(ExpensesEntity expenses) => 

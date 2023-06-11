@@ -5,6 +5,7 @@ Utilizar AutoMapper facilitaria a vida
 Para ser sincero eu não irei fazer mais os projetos com o nome do projeto completo colocando somente o nome 
  do módulo do projeto. 
 
+Ver questão performática do código. 
 
 Remover arquivos desnecessários no github... 
 Pesquisar depois se tem como ter mais de uma talho para os comandos do vscode.

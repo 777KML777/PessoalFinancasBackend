@@ -42,6 +42,8 @@ public class BankService : IBankService
 
         // Irá chamar o serviço de expenses somente para passar a lista já com tudo calculado
         List<ExpenseDto> lstExpensesDto = _expenseServices.GetExpenseByIdBank(bank.Id);
+        
+        bank.Expenses = new List<ExpenseDto>();
         lstExpensesDto.ForEach(x => bank.Expenses.Add(x));
 
 

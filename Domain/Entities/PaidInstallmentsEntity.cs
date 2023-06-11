@@ -1,15 +1,15 @@
-namespace Domain; 
+namespace Domain;
 
-public class PaidInstallmentsEntity 
+public class PaidInstallmentsEntity : Entity
 {
     public PaidInstallmentsEntity()
-        {
+    {
 
-        }
+    }
 
-        public DateTime PaymentDate { get; set; }
-        
-        // Relational 
-        public int IdExpenses { get; private set; }
-        public ExpensesEntity Expenses { get; set; }
+    public DateTime PaymentDate { get; set; }
+
+    // Relational 
+    public int IdExpenses { get; set; }
+    public ExpensesEntity Expenses { get; set; }
 }

@@ -11,30 +11,30 @@ public class ExpensesEntity : Entity
         //AddPaymentsToInstallments();
     }
 
-    public bool Separeted { get; private set; }
-    public bool Inactive { get; private set; }
-    public DateTime DateLastInstallments { get; private set; }
-    public DateTime DateFirstInstallments { get; private set; }
-    public decimal Amount { get; private set; }
-    public int CountInstallments { get; private set; }
-    public string Describe { get; private set; }
-    public string ExpenseName { get; private set; }
-    public string PaymentType { get; private set; }
+    public bool Separeted { get; set; }
+    public bool Inactive { get; set; }
+    public DateTime DateLastInstallments { get; set; }
+    public DateTime DateFirstInstallments { get; set; }
+    public decimal Amount { get; set; }
+    public int CountInstallments { get; set; }
+    public string Describe { get; set; }
+    public string ExpenseName { get; set; }
+    public string PaymentType { get; set; }
 
     public IReadOnlyCollection<PaidInstallmentsEntity> PaidInstallments { get { return _paidInstallments.ToArray(); } }
     // Not Mapped Properties
 
     [NotMapped]
-    public decimal TotalExpensesItem { get; private set; }
+    public decimal TotalExpensesItem { get; set; }
     [NotMapped]
-    public decimal TotalExpensesItemRemaining { get; private set; }
+    public decimal TotalExpensesItemRemaining { get; set; }
     [NotMapped]
-    public int PayedInstallments { get; private set; }
+    public int PayedInstallments { get; set; }
     [NotMapped]
-    public int RemainingInstallments { get; private set; }
+    public int RemainingInstallments { get; set; }
 
     // relational maps
-    public int IdBank { get; private set; }
+    public int IdBank { get; set; }
     public BankEntity Bank { get; set; }
 
 

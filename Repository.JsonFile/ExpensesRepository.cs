@@ -28,7 +28,7 @@ public class ExpensesRepository : IExpensesRepository
 
     public IList<ExpensesEntity> ReadAll()
     {
-        string jsonExpenses = File.ReadAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonExpenses_{"Json 1"}.json");
+        string jsonExpenses = File.ReadAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonExpenses.json");
         var teste = jsonExpenses.Replace(@"\", "");
 
 
