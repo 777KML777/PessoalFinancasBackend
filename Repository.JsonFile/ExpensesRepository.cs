@@ -28,7 +28,13 @@ public class ExpensesRepository : IExpensesRepository
 
     public IList<ExpensesEntity> ReadAll()
     {
-        string jsonExpenses = File.ReadAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonExpenses.json");
+        // string jsonExpensesOrigin = File.ReadAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonExpenses.json");
+
+        string enviroment = Environment.CurrentDirectory; // "C:\\Projects\\PessoalFinancasBackend\\Api"
+        string secondTest = enviroment.Replace("Api", "Repository.JsonFile");
+        string x = secondTest + @"\JsonExpenses.json";
+        string jsonExpenses = File.ReadAllText(x);
+
         var teste = jsonExpenses.Replace(@"\", "");
 
 

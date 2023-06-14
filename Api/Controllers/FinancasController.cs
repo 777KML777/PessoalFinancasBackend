@@ -17,7 +17,7 @@ namespace Api.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Success";
+            return "Agora sim. Este é o pequeno passo para alguém mas um grande salto para mim!!!";
         }
 
         [HttpGet("UniqueDetail/{id}")]

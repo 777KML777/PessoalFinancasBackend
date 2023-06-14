@@ -11,7 +11,7 @@ namespace Repository.JsonFile
             //Deserializar para um objeto a lista toda 
             // Atualizar somente o que eu tenho o Id no momento 
             // Salvar toda a coleção e não apenas um item. Modificando da lista apenas o item que tem que ser modificado. 
-            
+
             // Criando o nome do arquivo com DateTime no final eu teria um "Histórico de Movimentações" a cada de input ou deleção feita no banco...
             // Ser preciso na responsabilidade de cada método. 
             // Ser preciso para não ficar muito código escrito em muitas colunas
@@ -30,11 +30,25 @@ namespace Repository.JsonFile
         public IList<BankEntity> ReadAll()
         {
 
-            string jsonBanks = File.ReadAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonBank.json");
+            // string jsonBanksOrigin = File.ReadAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonBank.json");
+
+            // string appContext = AppContext.BaseDirectory; //"C:\\Projects\\PessoalFinancasBackend\\Api\\bin\\Debug\\net7.0\\"
+            // "C:\\Projects\\JornadaDotNet_Evento\\bin\\Debug\\net7.0\\Projects.xml"
+            // string app = AppDomain.CurrentDomain.BaseDirectory.ToString(); //"C:\\Projects\\PessoalFinancasBackend\\Api\\bin\\Debug\\net7.0\\"
+
+            // string jsonBanks1 = File.ReadAllText(appContext);
+            string enviroment = Environment.CurrentDirectory; // "C:\\Projects\\PessoalFinancasBackend\\Api"
+            string secondTest= enviroment.Replace("Api", "Repository.JsonFile");
+            string x = secondTest + @"\JsonBank.json";
+            string jsonBanks = File.ReadAllText(x);
+            // string jsonBanks3 = File.ReadAllText(app);  
+
+
             var teste = jsonBanks.Replace(@"\", "");
 
 
-            List<BankEntity> banks = JsonSerializer.Deserialize<List<BankEntity>>(teste);
+            // List<BankEntity> banks = JsonSerializer.Deserialize<List<BankEntity>>(teste);
+            List<BankEntity> banks = JsonSerializer.Deserialize<List<BankEntity>>(jsonBanks);
             return banks;
         }
 

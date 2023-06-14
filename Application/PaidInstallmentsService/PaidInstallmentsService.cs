@@ -14,10 +14,11 @@ public class PaidInstallmentsService : IPaidInstallmentsService
     }
     public List<PaidInstallmentsDto> GetAllPaidByIdExpenses(int idExpenses)
     {
-        List<PaidInstallmentsDto> lstPaidInstallmentss = new List<PaidInstallmentsDto>();
-        _paidInstallmentsRepository.GetAllPaidByIdExpenses(idExpenses).ToList().ForEach(x => lstPaidInstallmentss.Add(MappingEntityToDto(x)));
+        List<PaidInstallmentsDto> lstPaidInstallments = new List<PaidInstallmentsDto>();
+        _paidInstallmentsRepository.GetAllPaidByIdExpenses(idExpenses).ToList().ForEach(x => lstPaidInstallments.Add(MappingEntityToDto(x)));
 
-        return lstPaidInstallmentss;
+        
+        return lstPaidInstallments;
     }
     public PaidInstallmentsEntity MappingDtoToEntity(PaidInstallmentsDto obj)
     {

@@ -12,6 +12,7 @@ public class DetailService
     {
         DetailDto detail = new DetailDto();
         detail.Bank = _bankService.GetBankById(bankId);
+        detail.Bank.Calculate();
 
         return detail;
     }

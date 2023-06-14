@@ -20,4 +20,20 @@ public class ExpenseDto
     // relational maps
     public int IdBank { get; set; }
     public List<PaidInstallmentsDto> paidInstallments { get; set; }
+    // public void AddPaymentsToInstallments(PaidInstallmentsModel PaidInstallments)
+    // {
+    //     _paidInstallments.Add(PaidInstallments);
+    // }
+
+    public void SumTotalExpensesItem() =>
+         TotalExpensesItem = Inactive == false ? Amount * CountInstallments : 0;
+
+    public void SumInstallmentsAndTotalRemaning(int payedInstallments)
+    {
+        PayedInstallments = payedInstallments;
+        RemainingInstallments = PayedInstallments > 0 ? CountInstallments - PayedInstallments : 0;
+
+        if (!Inactive)
+            TotalExpensesItemRemaining = RemainingInstallments > 0 ? TotalExpensesItem - (Amount * PayedInstallments) : TotalExpensesItem;
+    }
 }

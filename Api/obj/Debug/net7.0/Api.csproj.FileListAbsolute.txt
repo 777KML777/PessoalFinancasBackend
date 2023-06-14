@@ -1,5 +1,8 @@
 C:\Projects\PessoalFinancasBackend\Api\bin\Debug\net7.0\appsettings.Development.json
 C:\Projects\PessoalFinancasBackend\Api\bin\Debug\net7.0\appsettings.json
+C:\Projects\PessoalFinancasBackend\Api\bin\Debug\net7.0\JsonBank.json
+C:\Projects\PessoalFinancasBackend\Api\bin\Debug\net7.0\JsonExpenses.json
+C:\Projects\PessoalFinancasBackend\Api\bin\Debug\net7.0\JsonPaidInstallments.json
 C:\Projects\PessoalFinancasBackend\Api\bin\Debug\net7.0\Api.exe
 C:\Projects\PessoalFinancasBackend\Api\bin\Debug\net7.0\Api.deps.json
 C:\Projects\PessoalFinancasBackend\Api\bin\Debug\net7.0\Api.runtimeconfig.json

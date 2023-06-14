@@ -47,12 +47,12 @@ public class BankService : IBankService
         lstExpensesDto.ForEach(x => bank.Expenses.Add(x));
 
 
-        // Passando os dados para os pagamentos. Isso aqui não parece estar muito legal.
-        foreach (var item in bank.Expenses)
-        {
-            item.paidInstallments = new List<PaidInstallmentsDto>();
-            lstExpensesDto.ForEach(x => item.paidInstallments = x.paidInstallments);
-        }
+        // //Pensei que esse trecho aqui fosse precisar...
+        // foreach (var item in bank.Expenses)
+        // {
+        //     item.paidInstallments = new List<PaidInstallmentsDto>();
+        //     lstExpensesDto.ForEach(x => item.paidInstallments = x.paidInstallments);
+        // }
 
         return bank;
     }

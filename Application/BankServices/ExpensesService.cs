@@ -23,6 +23,9 @@ public class ExpensesService : IExpensesService
             lstExpenses.ForEach(x => x.paidInstallments = _paidInstallmentsService.GetAllPaidByIdExpenses(x.Id));
         }
 
+        lstExpenses.ForEach(x => x.SumTotalExpensesItem());
+        lstExpenses.ForEach(x => x.SumInstallmentsAndTotalRemaning(x.paidInstallments.Count));
+        
         return lstExpenses;
     }
 

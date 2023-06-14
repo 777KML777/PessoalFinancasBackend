@@ -15,7 +15,7 @@ public class PaidInstallmentsRepository : IPaidInstallmentsRepository
         throw new NotImplementedException();
     }
 
-    public IList<PaidInstallmentsEntity> GetAllPaidByIdExpenses(int idExpenses) => 
+    public IList<PaidInstallmentsEntity> GetAllPaidByIdExpenses(int idExpenses) =>
         ReadAll().Where(x => x.IdExpenses == idExpenses).ToList();
 
     public PaidInstallmentsEntity GetById(int id)
@@ -25,7 +25,13 @@ public class PaidInstallmentsRepository : IPaidInstallmentsRepository
 
     public IList<PaidInstallmentsEntity> ReadAll()
     {
-        string paidInstallmentsJson = File.ReadAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonPaidInstallments.json");
+        // string paidInstallmentsJsonOrigin = File.ReadAllText($"C:\\Users\\KleberM2\\Videos\\Captures\\JsonPaidInstallments.json");
+
+        string enviroment = Environment.CurrentDirectory; // "C:\\Projects\\PessoalFinancasBackend\\Api"
+        string secondTest = enviroment.Replace("Api", "Repository.JsonFile");
+        string x = secondTest + @"\JsonPaidInstallments.json";
+        string paidInstallmentsJson = File.ReadAllText(x);
+
         var teste = paidInstallmentsJson.Replace(@"\", "");
 
 
