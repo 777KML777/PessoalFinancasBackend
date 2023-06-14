@@ -26,7 +26,7 @@ public class BankDto
             // responsável por saber o total inicial sem descontar as parcelas pagas
             TotalAllExpensesActive = Expenses.Sum(x => x.TotalExpensesItem);
 
-            TotalASeparar = Expenses.Where(x => x.Inactive == false && x.Separeted == false).Sum(x => x.TotalExpensesItemRemaining); // esse cálculo eu posso obter somando os TotalToSeparete ao invés dessa condição, mas com essa condição é bacana que mostra que o código está calculando corretamente
+            TotalToSeparete = Expenses.Where(x => x.Inactive == false && x.Separeted == false).Sum(x => x.TotalExpensesItemRemaining); // esse cálculo eu posso obter somando os TotalToSeparete ao invés dessa condição, mas com essa condição é bacana que mostra que o código está calculando corretamente
 
 
             #region Calculate Total To Separeted
@@ -75,6 +75,9 @@ public class BankDto
                 x.Inactive == false).Sum(x => x.TotalExpensesItemRemaining);
             #endregion
 
+            TotalSepareted = CalcTotalSepareted();
+            TotalSeparetedMonthly = CalcTotalSepareted();
+
         }
         public decimal TotalAllExpensesActive { get; set; }
         public decimal TotalAllExpensesRemainingActive { get; set; }
@@ -99,7 +102,7 @@ public class BankDto
         // Real Total To Separete
         public decimal TotalMonthly() =>
             TotalToSepareteCreditCardMonthly + TotalToSeparetePixMonthly;
-        public decimal TotalASeparar { get; set; }
+        public decimal TotalToSeparete { get; set; }
         #endregion
 
         #region Total Separeted
@@ -120,10 +123,14 @@ public class BankDto
         public decimal TotalSeparetedPix { get; set; }
 
         public int TotalActiveExpenses { get ; set; }
+
+        public decimal FinalBalance { get; set; }
+        public decimal TotalSeparetedMonthly { get; set; }
+        public decimal TotalSepareted { get; set; }
         // Real Total Separeted
-        public decimal TotalSeparetedMonthly() =>
+        public decimal CalcTotalSeparetedMonthly() =>
             TotalSeparetedDebitoMonthly + TotalSeparetedCreditCardMonthly + TotalSeparetedPixMonthly + TotalSeparetedBoletoMonthly;
-        public decimal TotalSepareted() =>
+        public decimal CalcTotalSepareted() =>
             TotalSeparetedDebito + TotalSeparetedCreditCard + TotalSeparetedPix + TotalSeparetedBoleto;
         #endregion
 }

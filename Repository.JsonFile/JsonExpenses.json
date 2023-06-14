@@ -19,10 +19,10 @@
         "Inactive": false,
         "DateLastInstallments": "2023-02-11",
         "DateFirstInstallments": "2022-03-11",
-        "Amount": 9.90,
+        "Amount": 14.99,
         "CountInstallments": 12,
-        "Describe": "Dinheiro star plus e disney plus. Vai acabar em março",
-        "ExpenseName": "Star plus e Disney plus",
+        "Describe": "Star plus e Disney plus",
+        "ExpenseName": "Assinatura Nível 6",
         "PaymentType": "DebitoDescontoAutomaticoPorPeriodo"
     },
     {
@@ -69,8 +69,8 @@
         "IdBank": 6,
         "Separeted": true,
         "Inactive": false,
-        "DateLastInstallments": "2024-12-29",
-        "DateFirstInstallments": "2023-06-01",
+        "DateLastInstallments": "2024-06-02",
+        "DateFirstInstallments": "2023-06-02",
         "Amount": 49.99,
         "CountInstallments": 12,
         "Describe": "Mensalidade Plano Oi Controle",
@@ -119,7 +119,7 @@
     {
         "Id": 11,
         "IdBank": 2,
-        "Separeted": true,
+        "Separeted": false,
         "Inactive": false,
         "DateLastInstallments": "2024-06-07",
         "DateFirstInstallments": "2023-06-09",
@@ -132,8 +132,8 @@
     {
         "Id": 12,
         "IdBank": 2,
-        "Separeted": false,
-        "Inactive": true,
+        "Separeted": true,
+        "Inactive": false,
         "DateLastInstallments": "2023-09-02",
         "DateFirstInstallments": "2023-06-09",
         "Amount": 47.00,
@@ -143,20 +143,20 @@
         "PaymentType": "Credito"
     },
     {
-        "Id": 19,
+        "Id": 13,
         "IdBank": 2,
         "Separeted": true,
         "Inactive": false,
         "DateLastInstallments": "2023-12-07",
         "DateFirstInstallments": "2022-06-09",
         "Amount": 7.99,
-        "CountInstallments": 15,
+        "CountInstallments": 12,
         "Describe": "SCP Basico Tarifa Cartao",
         "ExpenseName": "SCP Basico Tarifa Cartao",
         "PaymentType": "Credito"
     },
     {
-        "Id": 21,
+        "Id": 14,
         "IdBank": 2,
         "Separeted": true,
         "Inactive": false,
@@ -169,7 +169,7 @@
         "PaymentType": "Pix"
     },
     {
-        "Id": 24,
+        "Id": 15,
         "IdBank": 2,
         "Separeted": true,
         "Inactive": false,
@@ -182,7 +182,7 @@
         "PaymentType": "Credito"
     },
     {
-        "Id": 25,
+        "Id": 16,
         "IdBank": 2,
         "Separeted": true,
         "Inactive": false,
@@ -195,7 +195,7 @@
         "PaymentType": "Credito"
     },
     {
-        "Id": 26,
+        "Id": 17,
         "IdBank": 2,
         "Separeted": true,
         "Inactive": false,
@@ -208,7 +208,7 @@
         "PaymentType": "Credito"
     },
     {
-        "Id": 27,
+        "Id": 18,
         "IdBank": 2,
         "Separeted": true,
         "Inactive": false,
@@ -219,5 +219,18 @@
         "Describe": "Capa de tecido",
         "ExpenseName": "Capa Kindle",
         "PaymentType": "Credito"
+    },
+    {
+        "Id": 19,
+        "IdBank": 2,
+        "Separeted": false,
+        "Inactive": false,
+        "DateLastInstallments": "2023-12-04",
+        "DateFirstInstallments": "2024-12-07",
+        "Amount": 1150.00,
+        "CountInstallments": 24,
+        "Describe": "Pagamento da matrícula incluído",
+        "ExpenseName": "Fiap Faculdade",
+        "PaymentType": "Boleto"
     }
 ]

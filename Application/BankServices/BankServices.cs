@@ -41,18 +41,11 @@ public class BankService : IBankService
 
 
         // Irá chamar o serviço de expenses somente para passar a lista já com tudo calculado
-        List<ExpenseDto> lstExpensesDto = _expenseServices.GetExpenseByIdBank(bank.Id);
+        List<ExpenseDto> lstExpensesDto = _expenseServices.GetExpenseByIdBank(bank.Id)
+            .OrderBy(x => x.Inactive).ThenBy(x => x.ExpenseName).ToList();
         
         bank.Expenses = new List<ExpenseDto>();
         lstExpensesDto.ForEach(x => bank.Expenses.Add(x));
-
-
-        // //Pensei que esse trecho aqui fosse precisar...
-        // foreach (var item in bank.Expenses)
-        // {
-        //     item.paidInstallments = new List<PaidInstallmentsDto>();
-        //     lstExpensesDto.ForEach(x => item.paidInstallments = x.paidInstallments);
-        // }
 
         return bank;
     }

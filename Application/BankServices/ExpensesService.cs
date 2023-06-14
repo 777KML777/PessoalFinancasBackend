@@ -17,15 +17,12 @@ public class ExpensesService : IExpensesService
         List<ExpenseDto> lstExpenses = new List<ExpenseDto>();
         _expensesRepository.GetAllByIdBank(idBank).ForEach(x => lstExpenses.Add(MappingEntityToDto(x)));
 
-        foreach (var item in lstExpenses)
-        {
-            item.paidInstallments = new List<PaidInstallmentsDto>();
-            lstExpenses.ForEach(x => x.paidInstallments = _paidInstallmentsService.GetAllPaidByIdExpenses(x.Id));
-        }
+        lstExpenses.ForEach(x => x.paidInstallments = _paidInstallmentsService.GetAllPaidByIdExpenses(x.Id));
 
         lstExpenses.ForEach(x => x.SumTotalExpensesItem());
         lstExpenses.ForEach(x => x.SumInstallmentsAndTotalRemaning(x.paidInstallments.Count));
-        
+
+
         return lstExpenses;
     }
 
